@@ -57,4 +57,16 @@ public static class Models
     }
 
     #endregion
+
+    #region - Weapons -
+
+    [Serializable]
+    public class WeaponSettingsModel
+    {
+        [Header("Sway")]
+        public float SwayAmount;
+        public float SwaySmoothing;
+    }
+
+    #endregion
 }

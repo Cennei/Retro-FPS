@@ -50,6 +50,9 @@ public class scr_CharacterController : MonoBehaviour
     private Vector3 newMovementSpeed;
     private Vector3 newMovementSpeedVelocity;
 
+    [Header("Weapon")]
+    public WeaponController currentWeapon;
+
     private void Awake()
     {
         defaultInput = new DefaultInput();
@@ -70,6 +73,11 @@ public class scr_CharacterController : MonoBehaviour
         characterController = GetComponent<CharacterController>();
 
         cameraHeight = cameraHolder.localPosition.y;
+
+        if (currentWeapon)
+        {
+
+        }
     }
 
     private void Update()
